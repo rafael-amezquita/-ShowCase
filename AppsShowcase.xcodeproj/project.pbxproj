@@ -16,12 +16,13 @@
 		F80168BE1E2040FF00943775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80168BC1E2040FF00943775 /* LaunchScreen.storyboard */; };
 		F80168C91E2040FF00943775 /* AppsShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80168C81E2040FF00943775 /* AppsShowcaseTests.swift */; };
 		F80168D61E20426300943775 /* ShowcaseFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80168D51E20426300943775 /* ShowcaseFacade.swift */; };
-		F80168DA1E2044CA00943775 /* CategoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80168D91E2044CA00943775 /* CategoriesCollectionViewController.swift */; };
 		F80168DE1E20450C00943775 /* SummaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80168DD1E20450C00943775 /* SummaryTableViewController.swift */; };
 		F80168E01E20460A00943775 /* CategoriesFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80168DF1E20460A00943775 /* CategoriesFacade.swift */; };
 		F80168E21E20461E00943775 /* AppsListFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80168E11E20461E00943775 /* AppsListFacade.swift */; };
 		F80168E41E20464800943775 /* AppsListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80168E31E20464800943775 /* AppsListCollectionViewController.swift */; };
 		F80168E61E2046A000943775 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80168E51E2046A000943775 /* SplashViewController.swift */; };
+		F8865DC11E213C4C00469EA6 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8865DC01E213C4C00469EA6 /* CategoriesTableViewController.swift */; };
+		F8865DC31E2143ED00469EA6 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8865DC21E2143ED00469EA6 /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +53,13 @@
 		F80168C81E2040FF00943775 /* AppsShowcaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsShowcaseTests.swift; sourceTree = "<group>"; };
 		F80168CA1E2040FF00943775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F80168D51E20426300943775 /* ShowcaseFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowcaseFacade.swift; sourceTree = "<group>"; };
-		F80168D91E2044CA00943775 /* CategoriesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewController.swift; sourceTree = "<group>"; };
 		F80168DD1E20450C00943775 /* SummaryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryTableViewController.swift; sourceTree = "<group>"; };
 		F80168DF1E20460A00943775 /* CategoriesFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesFacade.swift; sourceTree = "<group>"; };
 		F80168E11E20461E00943775 /* AppsListFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsListFacade.swift; sourceTree = "<group>"; };
 		F80168E31E20464800943775 /* AppsListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsListCollectionViewController.swift; sourceTree = "<group>"; };
 		F80168E51E2046A000943775 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		F8865DC01E213C4C00469EA6 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		F8865DC21E2143ED00469EA6 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				F80168D51E20426300943775 /* ShowcaseFacade.swift */,
 				F80168DF1E20460A00943775 /* CategoriesFacade.swift */,
 				F80168E11E20461E00943775 /* AppsListFacade.swift */,
+				F8865DC21E2143ED00469EA6 /* CacheManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -167,8 +170,8 @@
 		F80168D71E20440D00943775 /* Showcase */ = {
 			isa = PBXGroup;
 			children = (
-				F80168D91E2044CA00943775 /* CategoriesCollectionViewController.swift */,
 				F80168E31E20464800943775 /* AppsListCollectionViewController.swift */,
+				F8865DC01E213C4C00469EA6 /* CategoriesTableViewController.swift */,
 			);
 			path = Showcase;
 			sourceTree = "<group>";
@@ -387,11 +390,12 @@
 			files = (
 				F80168D61E20426300943775 /* ShowcaseFacade.swift in Sources */,
 				F80168E21E20461E00943775 /* AppsListFacade.swift in Sources */,
-				F80168DA1E2044CA00943775 /* CategoriesCollectionViewController.swift in Sources */,
 				F80168E01E20460A00943775 /* CategoriesFacade.swift in Sources */,
 				F80168B11E2040FF00943775 /* AppDelegate.swift in Sources */,
 				F80168E41E20464800943775 /* AppsListCollectionViewController.swift in Sources */,
 				F80168DE1E20450C00943775 /* SummaryTableViewController.swift in Sources */,
+				F8865DC31E2143ED00469EA6 /* CacheManager.swift in Sources */,
+				F8865DC11E213C4C00469EA6 /* CategoriesTableViewController.swift in Sources */,
 				F80168B91E2040FF00943775 /* AppsShowcase.xcdatamodeld in Sources */,
 				F80168E61E2046A000943775 /* SplashViewController.swift in Sources */,
 			);
@@ -605,6 +609,7 @@
 				F80168CF1E2040FF00943775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F80168D01E2040FF00943775 /* Build configuration list for PBXNativeTarget "AppsShowcaseTests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +618,7 @@
 				F80168D21E2040FF00943775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

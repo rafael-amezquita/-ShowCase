@@ -10,34 +10,27 @@ import UIKit
 
 class SplashViewController: UIViewController {
 
+    // MARK: - init
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        CategoriesFacade.categoriesResponse { response in
+        setUp()
+    }
+    
+    // MARK: - configuration methods 
+    
+    private func setUp() {
+        CategoriesFacade.categoriesResponse { [weak self] response in
             
             guard let categories = response else {
                 return
             }
             
-            print(categories)
+            CacheManager.sharedInstance.appsList = categories
+            
+            let categoriesController = self?.storyboard?.instantiateViewController(withIdentifier: "CategoriesTableViewController")
+            self?.present(categoriesController!, animated: true, completion: nil)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
