@@ -12,5 +12,7 @@ class CacheManager {
     
     static let sharedInstance = CacheManager()
     
+    var categories = ["Top Free Applications"]
+    
     var appsList = [String]()
 }
