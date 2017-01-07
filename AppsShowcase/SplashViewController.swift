@@ -14,6 +14,14 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        CategoriesFacade.categoriesResponse { response in
+            
+            guard let categories = response else {
+                return
+            }
+            
+            print(categories)
+        }
     }
 
     override func didReceiveMemoryWarning() {
