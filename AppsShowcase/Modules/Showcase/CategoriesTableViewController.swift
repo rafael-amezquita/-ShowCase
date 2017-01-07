@@ -40,3 +40,12 @@ extension CategoriesTableViewController: UITableViewDataSource {
         return cell
     }
 }
+
+extension CategoriesTableViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let productsList = self.storyboard?.instantiateViewController(withIdentifier: "AppsListCollectionViewController")
+        self.present(productsList!, animated: true, completion: nil)
+    }
+
+}

@@ -14,5 +14,5 @@ class CacheManager {
     
     var categories = ["Top Free Applications"]
     
-    var appsList = [String]()
+    var appsList = [Product]()
 }

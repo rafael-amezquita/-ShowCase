@@ -20,7 +20,7 @@ class SplashViewController: UIViewController {
     // MARK: - configuration methods 
     
     private func setUp() {
-        CategoriesFacade.categoriesResponse { [weak self] response in
+        ShowcaseFacade.categoriesResponse { [weak self] response in
             
             guard let categories = response else {
                 return
