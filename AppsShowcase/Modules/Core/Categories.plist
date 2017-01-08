@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>url</key>
+		<string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/json</string>
+		<key>name</key>
+		<string>All</string>
+	</dict>
+    <dict>
+        <key>url</key>
+        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6018/json</string>
+        <key>name</key>
+        <string>Books</string>
+    </dict>
+    <dict>
+        <key>url</key>
+        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6000/json</string>
+        <key>name</key>
+        <string>Business</string>
+    </dict>
+    <dict>
+        <key>url</key>
+        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6017/json</string>
+        <key>name</key>
+        <string>Education</string>
+    </dict>
+    <dict>
+        <key>url</key>
+        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6016/json</string>
+        <key>name</key>
+        <string>Entertaintment</string>
+    </dict>
+    <dict>
+        <key>url</key>
+        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6015/json</string>
+        <key>name</key>
+        <string>Finance</string>
+    </dict>
+    <dict>
+        <key>url</key>
+        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6023/json</string>
+        <key>name</key>
+        <string>Food &amp; Drink</string>
+    </dict>
+    <dict>
+        <key>url</key>
+        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6014/json</string>
+        <key>name</key>
+        <string>Games</string>
+    </dict>
+</array>
+</plist>

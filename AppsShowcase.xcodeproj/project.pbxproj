@@ -23,6 +23,7 @@
 		F8865DC31E2143ED00469EA6 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8865DC21E2143ED00469EA6 /* CacheManager.swift */; };
 		F8865DC61E216DB500469EA6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8865DC41E216DB500469EA6 /* ProductCollectionViewCell.swift */; };
 		F8865DC91E217E1C00469EA6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8865DC81E217E1C00469EA6 /* Product.swift */; };
+		F8865DCB1E2287B600469EA6 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8865DCA1E2287B600469EA6 /* Categories.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		F8865DC21E2143ED00469EA6 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		F8865DC41E216DB500469EA6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8865DC81E217E1C00469EA6 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F8865DCA1E2287B600469EA6 /* Categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Categories.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				F80168D51E20426300943775 /* ShowcaseFacade.swift */,
 				F8865DC21E2143ED00469EA6 /* CacheManager.swift */,
 				F8865DC81E217E1C00469EA6 /* Product.swift */,
+				F8865DCA1E2287B600469EA6 /* Categories.plist */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8865DCB1E2287B600469EA6 /* Categories.plist in Resources */,
 				F80168BE1E2040FF00943775 /* LaunchScreen.storyboard in Resources */,
 				F80168BB1E2040FF00943775 /* Assets.xcassets in Resources */,
 				F80168B61E2040FF00943775 /* Main.storyboard in Resources */,

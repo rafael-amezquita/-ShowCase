@@ -8,10 +8,10 @@
 
 import UIKit
 
-private let reuseIdentifier = "CategoryCell"
-
 class CategoriesTableViewController: UIViewController {
 
+    fileprivate let reuseIdentifier = "CategoryCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -38,7 +38,8 @@ extension CategoriesTableViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
         
         if let textField = cell.textLabel {
-            textField.text = CacheManager.sharedInstance.categories[indexPath.row]
+            textField.text = CacheManager.sharedInstance.categories[indexPath.row].name
+            print("name = \(CacheManager.sharedInstance.categories[indexPath.row].name)")
         }
 
         return cell
@@ -49,12 +50,31 @@ extension CategoriesTableViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        guard let wrappedStoryboard = storyboard else {
-            return
+        let url = CacheManager.sharedInstance.categories[indexPath.row].url!
+        presentCategories(fromURL: url)
+    }
+    
+    private func presentCategories(fromURL url:String) {
+     
+        ShowcaseFacade.productResponse(fromURL:url ) { [weak self] response in
+            
+            guard let categories = response else {
+                return
+            }
+            
+            guard let weakself = self else {
+                return
+            }
+            
+            guard let weakStoryboard = weakself.storyboard else {
+                return
+            }
+            
+            CacheManager.sharedInstance.appsList = categories
+            
+            let productsController = weakStoryboard.instantiateViewController(withIdentifier: "AppsListCollectionViewController")
+            weakself.present(productsController, animated: true, completion: nil)
         }
-        
-        let productsList = wrappedStoryboard.instantiateViewController(withIdentifier: "AppsListCollectionViewController")
-        self.present(productsList, animated: true, completion: nil)
     }
 
 }

@@ -13,12 +13,19 @@ struct Product {
     var title:String?
     var image:UIImage?
     var summary:String?
+    var category:String?
     
-    init(withTitle title:String?, imageURL:String?, summary:String?) {
-        let data = NSData(contentsOf: NSURL(string:imageURL!) as! URL)
+    init(withTitle title:String?, imageURL:String?, summary:String?, category:String?) {
+        
         self.title = title
-        //TODO: Do this in background
+        self.summary = summary
+        self.category = category
+        
+        guard let stringUrl = imageURL else {
+            return
+        }
+        
+        let data = NSData(contentsOf: URL(string:stringUrl)!)
         self.image = UIImage(data: (data as? Data)!)
-        self.summary = summary!
     }
 }
