@@ -11,42 +11,63 @@ import Alamofire
 
 class ShowcaseFacade {
     
-    private static func fullShowcaseEntries(withHandler:@escaping ([String: Any]?)->()) {
-        Alamofire.request("https://itunes.apple.com/us/rss/topfreeapplications/limit=20/json").responseJSON { response in
-            
-            if response.result.value == nil {
-                withHandler(nil)
-                return
-            }
-            
-            withHandler(response.result.value as? [String : Any])
-        }
-    }
-    
     static func categoriesResponse(withHandler handler:@escaping ([Product]?)->()) {
-        ShowcaseFacade.fullShowcaseEntries { jsonResponse in
+        ShowcaseFacade.entriesResponse { jsonResponse in
             guard let response = jsonResponse else {
                 handler(nil)
                 return
             }
             
-            let feed = response["feed"] as! [String: Any]
-            let entries = feed["entry"] as! [Any]
-            var appNamesList = [Product]()
-            for (_, value) in entries.enumerated() {
-                let entry = value as! [String: Any]
-                let title = entry["title"] as! [String: Any]
-                let label = "\(title["label"]!)"
-                let imagesList = entry["im:image"]
-                let biggestImage = (imagesList as! [Any]).last
-                let imageURL =  "\((biggestImage as! [String: Any])["label"]!)"
-                
-                let currentApp = Product(withTitle: label, imageURL:imageURL, summary: "")
-                appNamesList.append(currentApp)
-            }
+            let feed = response["feed"] as! [String: AnyObject]
+            let appNamesList = product(fromEntries: feed["entry"] as! [AnyObject])
             
             handler(appNamesList)
         }
+    }
+    
+    static func productResponse(withHandler handler:@escaping ([Product]?)->()) {
+        ShowcaseFacade.entriesResponse { jsonResponse in
+            guard let response = jsonResponse else {
+                handler(nil)
+                return
+            }
+            
+            let feed = response["feed"] as! [String: AnyObject]
+            let appNamesList = product(fromEntries: feed["entry"] as! [AnyObject])
+            
+            handler(appNamesList)
+        }
+    }
+    
+    // MARK: - private methods
+    
+    private static func entriesResponse(withHandler handler:@escaping ([String: AnyObject]?)->()) {
+        Alamofire.request("https://itunes.apple.com/us/rss/topfreeapplications/limit=20/json").responseJSON { response in
+            
+            if response.result.value == nil {
+                handler(nil)
+                return
+            }
+            
+            handler(response.result.value as? [String : AnyObject])
+        }
+    }
+    
+    private static func product(fromEntries entries:[AnyObject]) -> [Product] {
+        var products = [Product]()
+        for (_, value) in entries.enumerated() {
+            let entry = value as! [String: AnyObject]
+            let title = entry["title"] as! [String: AnyObject]
+            let label = "\(title["label"]!)"
+            let imagesList = entry["im:image"]
+            let biggestImage = (imagesList as! [AnyObject]).last
+            let imageURL =  "\((biggestImage as! [String: AnyObject])["label"]!)"
+            
+            let currentApp = Product(withTitle: label, imageURL:imageURL, summary: "")
+            products.append(currentApp)
+        }
+        
+        return products
     }
 
 }

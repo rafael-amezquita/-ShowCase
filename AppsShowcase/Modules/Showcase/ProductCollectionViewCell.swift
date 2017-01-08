@@ -18,8 +18,17 @@ class ProductCollectionViewCell: UICollectionViewCell {
     }
     
     func configureCell(withTitle title:String, image:UIImage) {
-        titleLable?.text = title
-        imageView?.image = image
+        
+        guard let label = titleLable else {
+            return
+        }
+        
+        guard let productImage = imageView else {
+            return
+        }
+        
+        label.text = title
+        productImage.image = image
     }
 
 }

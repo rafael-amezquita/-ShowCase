@@ -8,6 +8,8 @@
 
 import UIKit
 
+private let reuseIdentifier = "CategoryCell"
+
 class CategoriesTableViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -33,10 +35,12 @@ extension CategoriesTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
         
-        cell.textLabel?.text = CacheManager.sharedInstance.categories[indexPath.row]
-        
+        if let textField = cell.textLabel {
+            textField.text = CacheManager.sharedInstance.categories[indexPath.row]
+        }
+
         return cell
     }
 }
@@ -44,8 +48,13 @@ extension CategoriesTableViewController: UITableViewDataSource {
 extension CategoriesTableViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let productsList = self.storyboard?.instantiateViewController(withIdentifier: "AppsListCollectionViewController")
-        self.present(productsList!, animated: true, completion: nil)
+        
+        guard let wrappedStoryboard = storyboard else {
+            return
+        }
+        
+        let productsList = wrappedStoryboard.instantiateViewController(withIdentifier: "AppsListCollectionViewController")
+        self.present(productsList, animated: true, completion: nil)
     }
 
 }
