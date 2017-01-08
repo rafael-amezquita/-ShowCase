@@ -3,52 +3,68 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>imageURL</key>
+		<string>http://services.atea.com/media/50113/bubles643x300.jpg</string>
 		<key>url</key>
 		<string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/json</string>
 		<key>name</key>
 		<string>All</string>
 	</dict>
-    <dict>
-        <key>url</key>
-        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6018/json</string>
-        <key>name</key>
-        <string>Books</string>
-    </dict>
-    <dict>
-        <key>url</key>
-        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6000/json</string>
-        <key>name</key>
-        <string>Business</string>
-    </dict>
-    <dict>
-        <key>url</key>
-        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6017/json</string>
-        <key>name</key>
-        <string>Education</string>
-    </dict>
-    <dict>
-        <key>url</key>
-        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6016/json</string>
-        <key>name</key>
-        <string>Entertaintment</string>
-    </dict>
-    <dict>
-        <key>url</key>
-        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6015/json</string>
-        <key>name</key>
-        <string>Finance</string>
-    </dict>
-    <dict>
-        <key>url</key>
-        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6023/json</string>
-        <key>name</key>
-        <string>Food &amp; Drink</string>
-    </dict>
-    <dict>
-        <key>url</key>
-        <string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6014/json</string>
-        <key>name</key>
-        <string>Games</string>
-    </dict>
+	<dict>
+		<key>imageURL</key>
+		<string>http://www.barringtonbooksretold.com/sites/barringtonbooksretold.com/files/book-club-recomendations.jpg</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6018/json</string>
+		<key>name</key>
+		<string>Books</string>
+	</dict>
+	<dict>
+		<key>imageURL</key>
+		<string>http://study.com/cimages/course-image/intro-to-business-syllabus-resource-lesson-plans_138757_large.jpg</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6000/json</string>
+		<key>name</key>
+		<string>Business</string>
+	</dict>
+	<dict>
+		<key>imageURL</key>
+		<string>http://picovico.com/wp-content/uploads/2015/11/yourstory-education.jpg</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6017/json</string>
+		<key>name</key>
+		<string>Education</string>
+	</dict>
+	<dict>
+		<key>imageURL</key>
+		<string>http://cdn.novasolutions.ca/wp-content/uploads/2015/05/seo-marketing.jpg</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6016/json</string>
+		<key>name</key>
+		<string>Entertainment</string>
+	</dict>
+	<dict>
+		<key>imageURL</key>
+		<string>http://www.localfinance.us/wp-content/uploads/2016/08/3-2.jpg</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6015/json</string>
+		<key>name</key>
+		<string>Finance</string>
+	</dict>
+	<dict>
+		<key>imageURL</key>
+		<string>http://www.oyibosonline.com/wp-content/uploads/2015/02/food-and-drink.png</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6023/json</string>
+		<key>name</key>
+		<string>Food &amp; Drink</string>
+	</dict>
+	<dict>
+		<key>imageURL</key>
+		<string>http://www.judyzportraits.com/wp-content/uploads/2015/08/games.png</string>
+		<key>url</key>
+		<string>https://itunes.apple.com/us/rss/topfreeapplications/limit=25/genre=6014/json</string>
+		<key>name</key>
+		<string>Games</string>
+	</dict>
 </array>
 </plist>

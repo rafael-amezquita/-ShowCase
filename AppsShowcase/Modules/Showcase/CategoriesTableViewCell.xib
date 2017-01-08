@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CategoriesTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoriesTableViewCell" rowHeight="115" id="KGk-i7-Jjw" customClass="CategoriesTableViewCell" customModule="AppsShowcase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RYC-SZ-3CK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWp-WC-4cf">
+                        <rect key="frame" x="0.0" y="50" width="320" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RYC-SZ-3CK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0Cu-Qv-Aut"/>
+                    <constraint firstAttribute="trailing" secondItem="YWp-WC-4cf" secondAttribute="trailing" id="47Q-2L-iWT"/>
+                    <constraint firstItem="RYC-SZ-3CK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4vl-zN-gqS"/>
+                    <constraint firstAttribute="trailing" secondItem="RYC-SZ-3CK" secondAttribute="trailing" id="67Z-tR-Qpz"/>
+                    <constraint firstAttribute="bottom" secondItem="YWp-WC-4cf" secondAttribute="bottom" id="Gd8-77-ygc"/>
+                    <constraint firstAttribute="bottom" secondItem="RYC-SZ-3CK" secondAttribute="bottom" id="Xfy-14-MRM"/>
+                    <constraint firstItem="YWp-WC-4cf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="fat-E5-ET9"/>
+                    <constraint firstItem="YWp-WC-4cf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yx5-5v-Foy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoryImageView" destination="RYC-SZ-3CK" id="byq-OM-b1W"/>
+                <outlet property="categoryLabel" destination="YWp-WC-4cf" id="Yzo-kz-bU8"/>
+            </connections>
+            <point key="canvasLocation" x="182" y="184"/>
+        </tableViewCell>
+    </objects>
+</document>

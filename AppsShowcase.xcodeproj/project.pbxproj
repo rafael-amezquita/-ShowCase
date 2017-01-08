@@ -24,6 +24,8 @@
 		F8865DC61E216DB500469EA6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8865DC41E216DB500469EA6 /* ProductCollectionViewCell.swift */; };
 		F8865DC91E217E1C00469EA6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8865DC81E217E1C00469EA6 /* Product.swift */; };
 		F8865DCB1E2287B600469EA6 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8865DCA1E2287B600469EA6 /* Categories.plist */; };
+		F8865DCE1E22B82100469EA6 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8865DCC1E22B82100469EA6 /* CategoriesTableViewCell.swift */; };
+		F8865DCF1E22B82100469EA6 /* CategoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8865DCD1E22B82100469EA6 /* CategoriesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		F8865DC41E216DB500469EA6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8865DC81E217E1C00469EA6 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F8865DCA1E2287B600469EA6 /* Categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Categories.plist; sourceTree = "<group>"; };
+		F8865DCC1E22B82100469EA6 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		F8865DCD1E22B82100469EA6 /* CategoriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 				F80168E31E20464800943775 /* AppsListCollectionViewController.swift */,
 				F8865DC01E213C4C00469EA6 /* CategoriesTableViewController.swift */,
 				F8865DC41E216DB500469EA6 /* ProductCollectionViewCell.swift */,
+				F8865DCC1E22B82100469EA6 /* CategoriesTableViewCell.swift */,
+				F8865DCD1E22B82100469EA6 /* CategoriesTableViewCell.xib */,
 			);
 			path = Showcase;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 			files = (
 				F8865DCB1E2287B600469EA6 /* Categories.plist in Resources */,
 				F80168BE1E2040FF00943775 /* LaunchScreen.storyboard in Resources */,
+				F8865DCF1E22B82100469EA6 /* CategoriesTableViewCell.xib in Resources */,
 				F80168BB1E2040FF00943775 /* Assets.xcassets in Resources */,
 				F80168B61E2040FF00943775 /* Main.storyboard in Resources */,
 			);
@@ -394,6 +401,7 @@
 			files = (
 				F80168D61E20426300943775 /* ShowcaseFacade.swift in Sources */,
 				F8865DC61E216DB500469EA6 /* ProductCollectionViewCell.swift in Sources */,
+				F8865DCE1E22B82100469EA6 /* CategoriesTableViewCell.swift in Sources */,
 				F80168B11E2040FF00943775 /* AppDelegate.swift in Sources */,
 				F8865DC91E217E1C00469EA6 /* Product.swift in Sources */,
 				F80168E41E20464800943775 /* AppsListCollectionViewController.swift in Sources */,

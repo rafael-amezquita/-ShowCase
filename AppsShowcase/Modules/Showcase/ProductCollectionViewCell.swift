@@ -10,7 +10,7 @@ import UIKit
 
 class ProductCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var titleLable:UILabel?
+    @IBOutlet weak var titleLabel:UILabel?
     @IBOutlet weak var imageView:UIImageView?
     
     override func awakeFromNib() {
@@ -19,7 +19,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     func configureCell(withTitle title:String, image:UIImage) {
         
-        guard let label = titleLable else {
+        guard let label = titleLabel else {
             return
         }
         

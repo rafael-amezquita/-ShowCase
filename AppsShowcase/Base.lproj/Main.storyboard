@@ -50,16 +50,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ej0-bE-7nP" userLabel="categories table">
                                 <rect key="frame" x="16" y="20" width="343" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoryCell" id="lSc-xF-cfy" userLabel="category cell">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lSc-xF-cfy" id="On9-3J-b76">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BTC-1H-HRA" id="R9I-oO-ziW"/>
                                     <outlet property="delegate" destination="BTC-1H-HRA" id="lhL-bf-9H7"/>
@@ -74,6 +64,9 @@
                             <constraint firstItem="ej0-bE-7nP" firstAttribute="leading" secondItem="P9S-Ns-Qyv" secondAttribute="leading" constant="16" id="aOB-3j-zMW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="categoriesTable" destination="ej0-bE-7nP" id="onO-mQ-YKI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUx-xx-YmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +107,7 @@
                                                         <constraint firstAttribute="height" constant="105" id="ZzL-qn-kFe"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="iUE-Uc-coF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="iUE-Uc-coF" userLabel="Title Label">
                                                     <rect key="frame" x="0.0" y="105" width="150" height="45"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -133,7 +126,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="Y5C-df-MMj" id="Zrg-DP-6Ze"/>
-                                            <outlet property="titleLable" destination="iUE-Uc-coF" id="EaJ-Tv-bJK"/>
+                                            <outlet property="titleLabel" destination="iUE-Uc-coF" id="u3E-Wf-lLY"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

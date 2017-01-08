@@ -40,27 +40,6 @@ class SplashViewController: UIViewController {
             let categoriesController = weakStoryboard.instantiateViewController(withIdentifier: "CategoriesTableViewController")
             weakself.present(categoriesController, animated: true, completion: nil)
         }
-        /*
-        ShowcaseFacade.productResponse { [weak self] response in
-            
-            guard let categories = response else {
-                return
-            }
-            
-            guard let weakself = self else {
-                return
-            }
-            
-            guard let weakStoryboard = weakself.storyboard else {
-                return
-            }
-            
-            CacheManager.sharedInstance.appsList = categories
-            
-            let categoriesController = weakStoryboard.instantiateViewController(withIdentifier: "CategoriesTableViewController")
-            weakself.present(categoriesController, animated: true, completion: nil)
-        }
-         */
     }
 
 }

@@ -10,15 +10,22 @@ import UIKit
 
 class CategoriesTableViewController: UIViewController {
 
-    fileprivate let reuseIdentifier = "CategoryCell"
+    @IBOutlet weak var categoriesTable:UITableView?
+    
+    fileprivate let reuseIdentifier = "CategoriesTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        registerCategoryClass()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func registerCategoryClass() {
+        guard let table = categoriesTable else {
+            return
+        }
+        
+        table.register(UINib(nibName: "CategoriesTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
     }
 }
 
@@ -35,13 +42,10 @@ extension CategoriesTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! CategoriesTableViewCell
         
-        if let textField = cell.textLabel {
-            textField.text = CacheManager.sharedInstance.categories[indexPath.row].name
-            print("name = \(CacheManager.sharedInstance.categories[indexPath.row].name)")
-        }
-
+        cell.configureCategoryCell(withTitle: CacheManager.sharedInstance.categories[indexPath.row].name!, imageURL: "")
+        
         return cell
     }
 }
@@ -52,6 +56,10 @@ extension CategoriesTableViewController: UITableViewDelegate {
         
         let url = CacheManager.sharedInstance.categories[indexPath.row].url!
         presentCategories(fromURL: url)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CategoriesTableViewCell.cellHeight()
     }
     
     private func presentCategories(fromURL url:String) {
