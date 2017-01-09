@@ -44,7 +44,8 @@ extension CategoriesTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! CategoriesTableViewCell
         
-        cell.configureCategoryCell(withTitle: CacheManager.sharedInstance.categories[indexPath.row].name!, imageURL: "")
+        let category = CacheManager.sharedInstance.categories[indexPath.row]
+        cell.configureCategoryCell(withTitle: category.name!, imageURL: category.imageURL!)
         
         return cell
     }

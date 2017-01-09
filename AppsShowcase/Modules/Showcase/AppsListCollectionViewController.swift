@@ -16,7 +16,6 @@ class AppsListCollectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.productCollectionView!.backgroundColor = UIColor.lightGray
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,8 +41,6 @@ extension AppsListCollectionViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ProductCollectionViewCell
         let product =  CacheManager.sharedInstance.appsList[indexPath.row] as Product
         cell.configureCell(withTitle: product.title!, image: product.image!)
-        // Configure the cell
-        cell.backgroundColor = UIColor.white
         return cell
     }
 }

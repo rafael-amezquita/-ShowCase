@@ -53,6 +53,7 @@ class CacheManager {
 
             currentCategory.name = dictionaryItem["name"]!
             currentCategory.url = dictionaryItem["url"]!
+            currentCategory.imageURL = dictionaryItem["imageURL"]!
         }
         
         do {

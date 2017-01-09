@@ -30,12 +30,20 @@ class CategoriesTableViewCell: UITableViewCell {
         
         cellTitle.text = title
      
-//        guard let imageView = categoryImageView else {
-//            return
-//        }
-//        
-//        let imageData = NSData(contentsOf: URL(string:imageURL)!)
-//        imageView.image = UIImage(data: (imageData as? Data)!)
+        guard let imageView = categoryImageView else {
+            return
+        }
+        
+        DispatchQueue.global(qos: .background).async {
+            if let url = URL(string:imageURL) {
+                let imageData = NSData(contentsOf: url)
+                let image = UIImage(data: (imageData as? Data)!)
+                
+                DispatchQueue.main.async {
+                    imageView.image = image
+                }
+            }
+        }
     }
     
 }
