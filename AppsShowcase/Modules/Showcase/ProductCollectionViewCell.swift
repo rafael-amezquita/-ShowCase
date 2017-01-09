@@ -15,6 +15,8 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        imageView?.contentMode = .scaleAspectFit
     }
     
     func configureCell(withTitle title:String, image:UIImage) {

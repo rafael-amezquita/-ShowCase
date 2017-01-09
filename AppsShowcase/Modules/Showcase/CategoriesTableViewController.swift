@@ -27,6 +27,7 @@ class CategoriesTableViewController: UIViewController {
         
         table.register(UINib(nibName: "CategoriesTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
     }
+    
 }
 
 extension CategoriesTableViewController: UITableViewDataSource {

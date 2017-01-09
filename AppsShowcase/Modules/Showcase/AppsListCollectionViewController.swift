@@ -17,30 +17,31 @@ class AppsListCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    @IBAction func returnToMenu(sender:UIButton) {
+        let menuController = self.storyboard?.instantiateViewController(withIdentifier: "CategoriesTableViewController")
+        self.present(menuController!, animated: true, completion: nil)
+    }
 }
 
 extension AppsListCollectionViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
+        
         return CacheManager.sharedInstance.appsList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ProductCollectionViewCell
         let product =  CacheManager.sharedInstance.appsList[indexPath.row] as Product
         cell.configureCell(withTitle: product.title!, image: product.image!)
+        
         return cell
     }
 }

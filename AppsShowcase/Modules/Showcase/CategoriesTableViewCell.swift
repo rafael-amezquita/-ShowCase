@@ -14,7 +14,7 @@ class CategoriesTableViewCell: UITableViewCell {
     @IBOutlet weak var categoryImageView:UIImageView?
     
     static func cellHeight() -> CGFloat {
-        return CGFloat(115)
+        return CGFloat(142)
     }
     
     override func awakeFromNib() {
