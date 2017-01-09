@@ -28,6 +28,7 @@
 		F8865DCF1E22B82100469EA6 /* CategoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8865DCD1E22B82100469EA6 /* CategoriesTableViewCell.xib */; };
 		F8BF69881E23340F00FA0587 /* place-holder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8BF69851E23340F00FA0587 /* place-holder.jpg */; };
 		F8BF698C1E23392500FA0587 /* app-place-holder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8BF698B1E23392500FA0587 /* app-place-holder.jpg */; };
+		F8BF698E1E233C5E00FA0587 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		F8865DCD1E22B82100469EA6 /* CategoriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesTableViewCell.xib; sourceTree = "<group>"; };
 		F8BF69851E23340F00FA0587 /* place-holder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "place-holder.jpg"; sourceTree = "<group>"; };
 		F8BF698B1E23392500FA0587 /* app-place-holder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-place-holder.jpg"; sourceTree = "<group>"; };
+		F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				F8865DC21E2143ED00469EA6 /* CacheManager.swift */,
 				F8865DC81E217E1C00469EA6 /* Product.swift */,
 				F8865DCA1E2287B600469EA6 /* Categories.plist */,
+				F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BF698E1E233C5E00FA0587 /* AnimationManager.swift in Sources */,
 				F80168D61E20426300943775 /* ShowcaseFacade.swift in Sources */,
 				F8865DC61E216DB500469EA6 /* ProductCollectionViewCell.swift in Sources */,
 				F8865DCE1E22B82100469EA6 /* CategoriesTableViewCell.swift in Sources */,

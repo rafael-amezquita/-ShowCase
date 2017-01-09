@@ -66,6 +66,10 @@ extension CategoriesTableViewController: UITableViewDelegate {
         return CategoriesTableViewCell.cellHeight()
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        AnimationManager.slideUpDownCell(cell: cell, tableView: tableView)
+    }
+    
     private func presentCategories(fromURL url:String) {
      
         SVProgressHUD.show()
