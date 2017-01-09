@@ -29,6 +29,7 @@
 		F8BF69881E23340F00FA0587 /* place-holder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8BF69851E23340F00FA0587 /* place-holder.jpg */; };
 		F8BF698C1E23392500FA0587 /* app-place-holder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8BF698B1E23392500FA0587 /* app-place-holder.jpg */; };
 		F8BF698E1E233C5E00FA0587 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */; };
+		F8BF69901E23C03A00FA0587 /* AppListAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF698F1E23C03A00FA0587 /* AppListAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		F8BF69851E23340F00FA0587 /* place-holder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "place-holder.jpg"; sourceTree = "<group>"; };
 		F8BF698B1E23392500FA0587 /* app-place-holder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-place-holder.jpg"; sourceTree = "<group>"; };
 		F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		F8BF698F1E23C03A00FA0587 /* AppListAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				F8865DC81E217E1C00469EA6 /* Product.swift */,
 				F8865DCA1E2287B600469EA6 /* Categories.plist */,
 				F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */,
+				F8BF698F1E23C03A00FA0587 /* AppListAnimationController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				F8865DC91E217E1C00469EA6 /* Product.swift in Sources */,
 				F80168E41E20464800943775 /* AppsListCollectionViewController.swift in Sources */,
 				F80168DE1E20450C00943775 /* SummaryTableViewController.swift in Sources */,
+				F8BF69901E23C03A00FA0587 /* AppListAnimationController.swift in Sources */,
 				F8865DC31E2143ED00469EA6 /* CacheManager.swift in Sources */,
 				F8865DC11E213C4C00469EA6 /* CategoriesTableViewController.swift in Sources */,
 				F80168B91E2040FF00943775 /* AppsShowcase.xcdatamodeld in Sources */,

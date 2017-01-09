@@ -14,11 +14,12 @@ class CategoriesTableViewController: UIViewController {
 
     @IBOutlet weak var categoriesTable:UITableView?
     
+    fileprivate let appsListAnimationController = AppListAnimationController()
+    
     fileprivate let reuseIdentifier = "CategoriesTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         registerCategoryClass()
     }
     
@@ -93,8 +94,16 @@ extension CategoriesTableViewController: UITableViewDelegate {
             SVProgressHUD.dismiss()
             
             let productsController = weakStoryboard.instantiateViewController(withIdentifier: "AppsListCollectionViewController")
+            productsController.transitioningDelegate = self
             weakself.present(productsController, animated: true, completion: nil)
         }
     }
+}
 
+extension CategoriesTableViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return appsListAnimationController
+    }
 }
