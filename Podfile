@@ -6,6 +6,8 @@ target 'AppsShowcase' do
   use_frameworks!
 
   pod 'Alamofire', '~> 4.0'
+  pod 'SVProgressHUD'
+  pod 'SDWebImage', '~>3.8'
 
   target 'AppsShowcaseTests' do
     inherit! :search_paths

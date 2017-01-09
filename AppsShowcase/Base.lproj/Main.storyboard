@@ -21,14 +21,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uix-7o-ysN">
-                                <rect key="frame" x="177" y="323" width="20" height="20"/>
-                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Showcase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyT-n6-Vle">
+                                <rect key="frame" x="148" y="352" width="78" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="Lbg-oe-oUe"/>
+                                    <constraint firstAttribute="height" constant="21" id="nfz-zw-a5I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Store Top Free Applications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkZ-t3-rkD">
+                                <rect key="frame" x="57" y="323" width="260" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dDP-nk-KeV"/>
+                                    <constraint firstAttribute="width" constant="260" id="eXo-He-Ilm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uix-7o-ysN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ML6-fH-jnF"/>
-                            <constraint firstItem="uix-7o-ysN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PWb-Ob-j8v"/>
+                            <constraint firstItem="fyT-n6-Vle" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0dl-kz-MBQ"/>
+                            <constraint firstItem="NkZ-t3-rkD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0jB-gJ-2qs"/>
+                            <constraint firstItem="NkZ-t3-rkD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="44P-gH-65B"/>
+                            <constraint firstItem="fyT-n6-Vle" firstAttribute="top" secondItem="NkZ-t3-rkD" secondAttribute="bottom" constant="8" id="vl6-Q3-8Od"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -131,7 +150,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y5C-df-MMj">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-place-holder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Y5C-df-MMj">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="105"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="105" id="ZzL-qn-kFe"/>
@@ -223,6 +242,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="app-place-holder.jpg" width="150" height="105"/>
         <image name="backButtom" width="25" height="25"/>
     </resources>
 </document>

@@ -34,16 +34,8 @@ class CategoriesTableViewCell: UITableViewCell {
             return
         }
         
-        DispatchQueue.global(qos: .background).async {
-            if let url = URL(string:imageURL) {
-                let imageData = NSData(contentsOf: url)
-                let image = UIImage(data: (imageData as? Data)!)
-                
-                DispatchQueue.main.async {
-                    imageView.image = image
-                }
-            }
-        }
+        let url = URL(string: imageURL)!
+        imageView.sd_setImage(with: url)
     }
     
 }

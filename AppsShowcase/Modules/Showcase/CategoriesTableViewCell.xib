@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RYC-SZ-3CK">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place-holder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RYC-SZ-3CK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E65-5R-XQw">
@@ -70,4 +70,7 @@
             <point key="canvasLocation" x="50" y="151.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="place-holder.jpg" width="320" height="107"/>
+    </resources>
 </document>

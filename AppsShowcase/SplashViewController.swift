@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SplashViewController: UIViewController {
 
@@ -14,6 +15,8 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SVProgressHUD.show()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,7 +38,7 @@ class SplashViewController: UIViewController {
                 return
             }
             
-            print("end loading")
+            SVProgressHUD.dismiss()
             
             let categoriesController = weakStoryboard.instantiateViewController(withIdentifier: "CategoriesTableViewController")
             weakself.present(categoriesController, animated: true, completion: nil)

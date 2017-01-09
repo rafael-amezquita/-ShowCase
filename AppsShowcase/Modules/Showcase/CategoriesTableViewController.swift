@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+import SDWebImage
 
 class CategoriesTableViewController: UIViewController {
 
@@ -66,6 +68,8 @@ extension CategoriesTableViewController: UITableViewDelegate {
     
     private func presentCategories(fromURL url:String) {
      
+        SVProgressHUD.show()
+        
         ShowcaseFacade.productResponse(fromURL:url ) { [weak self] response in
             
             guard let categories = response else {
@@ -81,6 +85,8 @@ extension CategoriesTableViewController: UITableViewDelegate {
             }
             
             CacheManager.sharedInstance.appsList = categories
+            
+            SVProgressHUD.dismiss()
             
             let productsController = weakStoryboard.instantiateViewController(withIdentifier: "AppsListCollectionViewController")
             weakself.present(productsController, animated: true, completion: nil)

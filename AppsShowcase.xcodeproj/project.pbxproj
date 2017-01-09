@@ -26,6 +26,8 @@
 		F8865DCB1E2287B600469EA6 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8865DCA1E2287B600469EA6 /* Categories.plist */; };
 		F8865DCE1E22B82100469EA6 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8865DCC1E22B82100469EA6 /* CategoriesTableViewCell.swift */; };
 		F8865DCF1E22B82100469EA6 /* CategoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8865DCD1E22B82100469EA6 /* CategoriesTableViewCell.xib */; };
+		F8BF69881E23340F00FA0587 /* place-holder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8BF69851E23340F00FA0587 /* place-holder.jpg */; };
+		F8BF698C1E23392500FA0587 /* app-place-holder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8BF698B1E23392500FA0587 /* app-place-holder.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		F8865DCA1E2287B600469EA6 /* Categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Categories.plist; sourceTree = "<group>"; };
 		F8865DCC1E22B82100469EA6 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
 		F8865DCD1E22B82100469EA6 /* CategoriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesTableViewCell.xib; sourceTree = "<group>"; };
+		F8BF69851E23340F00FA0587 /* place-holder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "place-holder.jpg"; sourceTree = "<group>"; };
+		F8BF698B1E23392500FA0587 /* app-place-holder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-place-holder.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 				F80168AF1E2040FF00943775 /* AppsShowcase */,
 				F80168C71E2040FF00943775 /* AppsShowcaseTests */,
 				F80168AE1E2040FF00943775 /* Products */,
+				F8BF69841E23340F00FA0587 /* resources */,
 				50136A14DA7B42381FAC0ACB /* Pods */,
 				3D024A843C2422A47DF62324 /* Frameworks */,
 			);
@@ -191,6 +196,15 @@
 				F80168DD1E20450C00943775 /* SummaryTableViewController.swift */,
 			);
 			path = Summary;
+			sourceTree = "<group>";
+		};
+		F8BF69841E23340F00FA0587 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8BF698B1E23392500FA0587 /* app-place-holder.jpg */,
+				F8BF69851E23340F00FA0587 /* place-holder.jpg */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +300,9 @@
 			files = (
 				F8865DCB1E2287B600469EA6 /* Categories.plist in Resources */,
 				F80168BE1E2040FF00943775 /* LaunchScreen.storyboard in Resources */,
+				F8BF698C1E23392500FA0587 /* app-place-holder.jpg in Resources */,
 				F8865DCF1E22B82100469EA6 /* CategoriesTableViewCell.xib in Resources */,
+				F8BF69881E23340F00FA0587 /* place-holder.jpg in Resources */,
 				F80168BB1E2040FF00943775 /* Assets.xcassets in Resources */,
 				F80168B61E2040FF00943775 /* Main.storyboard in Resources */,
 			);
