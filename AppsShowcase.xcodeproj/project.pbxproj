@@ -30,6 +30,7 @@
 		F8BF698C1E23392500FA0587 /* app-place-holder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8BF698B1E23392500FA0587 /* app-place-holder.jpg */; };
 		F8BF698E1E233C5E00FA0587 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */; };
 		F8BF69901E23C03A00FA0587 /* AppListAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF698F1E23C03A00FA0587 /* AppListAnimationController.swift */; };
+		F8BF69921E23CB1F00FA0587 /* CategoriesAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF69911E23CB1F00FA0587 /* CategoriesAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		F8BF698B1E23392500FA0587 /* app-place-holder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-place-holder.jpg"; sourceTree = "<group>"; };
 		F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		F8BF698F1E23C03A00FA0587 /* AppListAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListAnimationController.swift; sourceTree = "<group>"; };
+		F8BF69911E23CB1F00FA0587 /* CategoriesAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				F8865DCA1E2287B600469EA6 /* Categories.plist */,
 				F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */,
 				F8BF698F1E23C03A00FA0587 /* AppListAnimationController.swift */,
+				F8BF69911E23CB1F00FA0587 /* CategoriesAnimationController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BF69921E23CB1F00FA0587 /* CategoriesAnimationController.swift in Sources */,
 				F8BF698E1E233C5E00FA0587 /* AnimationManager.swift in Sources */,
 				F80168D61E20426300943775 /* ShowcaseFacade.swift in Sources */,
 				F8865DC61E216DB500469EA6 /* ProductCollectionViewCell.swift in Sources */,

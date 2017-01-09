@@ -20,6 +20,7 @@ class AppsListCollectionViewController: UIViewController {
     
     @IBAction func returnToMenu(sender:UIButton) {
         let menuController = self.storyboard?.instantiateViewController(withIdentifier: "CategoriesTableViewController")
+        menuController?.transitioningDelegate = self
         self.present(menuController!, animated: true, completion: nil)
     }
 }
@@ -51,5 +52,14 @@ extension AppsListCollectionViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
         AnimationManager.slideUpDownCollectionViewCell(cell, tableView: collectionView)
+    }
+}
+
+extension AppsListCollectionViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        let categoriesAnimationController = CategoriesAnimationController()
+        return categoriesAnimationController
     }
 }

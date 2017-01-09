@@ -14,8 +14,6 @@ class CategoriesTableViewController: UIViewController {
 
     @IBOutlet weak var categoriesTable:UITableView?
     
-    fileprivate let appsListAnimationController = AppListAnimationController()
-    
     fileprivate let reuseIdentifier = "CategoriesTableViewCell"
     
     override func viewDidLoad() {
@@ -104,6 +102,7 @@ extension CategoriesTableViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
+        let appsListAnimationController = AppListAnimationController()
         return appsListAnimationController
     }
 }
