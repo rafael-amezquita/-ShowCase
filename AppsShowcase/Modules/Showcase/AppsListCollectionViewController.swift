@@ -45,3 +45,11 @@ extension AppsListCollectionViewController: UICollectionViewDataSource {
         return cell
     }
 }
+
+extension AppsListCollectionViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        AnimationManager.slideUpDownCollectionViewCell(cell, tableView: collectionView)
+    }
+}

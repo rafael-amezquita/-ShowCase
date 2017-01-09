@@ -67,7 +67,7 @@ extension CategoriesTableViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        AnimationManager.slideUpDownCell(cell: cell, tableView: tableView)
+        AnimationManager.slideUpDownTableViewCell(cell, tableView: tableView)
     }
     
     private func presentCategories(fromURL url:String) {

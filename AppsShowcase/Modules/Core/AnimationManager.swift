@@ -10,7 +10,7 @@ import UIKit
 
 class AnimationManager {
     
-    static func slideUpDownCell(cell:UITableViewCell, tableView:UITableView) {
+    static func slideUpDownTableViewCell(_ cell:UITableViewCell, tableView:UITableView) {
         
         guard tableView.visibleCells.contains(cell) == false else {
             return
@@ -23,6 +23,30 @@ class AnimationManager {
         guard let lastVisibleCell = tableView.visibleCells.last else {
             return
         }
+        
+        AnimationManager.slideCell(cell, fisrtVisibleCell:fisrtVisibleCell, lastVisibleCell: lastVisibleCell)
+    }
+    
+    static func slideUpDownCollectionViewCell(_ cell:UICollectionViewCell, tableView:UICollectionView) {
+        
+        guard tableView.visibleCells.contains(cell) == false else {
+            return
+        }
+        
+        guard let fisrtVisibleCell = tableView.visibleCells.first else {
+            return
+        }
+        
+        guard let lastVisibleCell = tableView.visibleCells.last else {
+            return
+        }
+        
+        AnimationManager.slideCell(cell, fisrtVisibleCell:fisrtVisibleCell, lastVisibleCell: lastVisibleCell)
+    }
+    
+    // MARK: - private
+    
+    static private func slideCell(_ cell:UIView, fisrtVisibleCell:UIView, lastVisibleCell:UIView) {
         
         var yPos = 0
         if cell.frame.origin.y < fisrtVisibleCell.frame.origin.y{
