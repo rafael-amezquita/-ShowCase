@@ -29,7 +29,6 @@ class AppListAnimationController: NSObject, UIViewControllerAnimatedTransitionin
         containerView.addSubview(currentView)
         containerView.addSubview(destinationView)
         
-        currentView.alpha = 1
         destinationView.frame = CGRect(origin: CGPoint(x: currentView.frame.size.width,
                                                        y: currentView.frame.origin.y),
                                        size: currentView.frame.size)

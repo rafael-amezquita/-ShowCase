@@ -23,6 +23,12 @@ class AppsListCollectionViewController: UIViewController {
         menuController?.transitioningDelegate = self
         self.present(menuController!, animated: true, completion: nil)
     }
+    
+    @IBAction func onSummary(sender: UIButton) {
+        let summary = storyboard?.instantiateViewController(withIdentifier: "SummaryViewController")
+        summary?.transitioningDelegate = self
+        self.present(summary!, animated: true, completion: nil)
+    }
 }
 
 extension AppsListCollectionViewController: UICollectionViewDataSource {
@@ -59,7 +65,8 @@ extension AppsListCollectionViewController: UIViewControllerTransitioningDelegat
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
-        let categoriesAnimationController = CategoriesAnimationController()
-        return categoriesAnimationController
+        let animationController = presented.isKind(of: SummaryViewController.self) ? SummaryAnimationController() : CategoriesAnimationController()
+        
+        return animationController as? UIViewControllerAnimatedTransitioning
     }
 }

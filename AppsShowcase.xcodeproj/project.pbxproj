@@ -31,6 +31,8 @@
 		F8BF698E1E233C5E00FA0587 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */; };
 		F8BF69901E23C03A00FA0587 /* AppListAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF698F1E23C03A00FA0587 /* AppListAnimationController.swift */; };
 		F8BF69921E23CB1F00FA0587 /* CategoriesAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF69911E23CB1F00FA0587 /* CategoriesAnimationController.swift */; };
+		F8BF69941E2477B800FA0587 /* SummaryAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF69931E2477B800FA0587 /* SummaryAnimationController.swift */; };
+		F8BF69961E2490E300FA0587 /* SummaryDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF69951E2490E300FA0587 /* SummaryDismissAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		F8BF698F1E23C03A00FA0587 /* AppListAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListAnimationController.swift; sourceTree = "<group>"; };
 		F8BF69911E23CB1F00FA0587 /* CategoriesAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesAnimationController.swift; sourceTree = "<group>"; };
+		F8BF69931E2477B800FA0587 /* SummaryAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryAnimationController.swift; sourceTree = "<group>"; };
+		F8BF69951E2490E300FA0587 /* SummaryDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryDismissAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 				F8BF698D1E233C5E00FA0587 /* AnimationManager.swift */,
 				F8BF698F1E23C03A00FA0587 /* AppListAnimationController.swift */,
 				F8BF69911E23CB1F00FA0587 /* CategoriesAnimationController.swift */,
+				F8BF69931E2477B800FA0587 /* SummaryAnimationController.swift */,
+				F8BF69951E2490E300FA0587 /* SummaryDismissAnimationController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BF69961E2490E300FA0587 /* SummaryDismissAnimationController.swift in Sources */,
 				F8BF69921E23CB1F00FA0587 /* CategoriesAnimationController.swift in Sources */,
 				F8BF698E1E233C5E00FA0587 /* AnimationManager.swift in Sources */,
 				F80168D61E20426300943775 /* ShowcaseFacade.swift in Sources */,
@@ -438,6 +445,7 @@
 				F8865DC11E213C4C00469EA6 /* CategoriesTableViewController.swift in Sources */,
 				F80168B91E2040FF00943775 /* AppsShowcase.xcdatamodeld in Sources */,
 				F80168E61E2046A000943775 /* SplashViewController.swift in Sources */,
+				F8BF69941E2477B800FA0587 /* SummaryAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
